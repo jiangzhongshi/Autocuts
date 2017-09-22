@@ -88,7 +88,7 @@ OPTION (USE_PARDISO "Use Pardiso" OFF)
 IF(USE_PARDISO)
     message("Use PARDISO")
     set(LIBIGL_EXTRA_LIBRARIES ${LIBIGL_EXTRA_LIBRARIES} ${CMAKE_SOURCE_DIR}/libpardiso500-MACOS-X86-64.dylib)
-    set(SRCFILES ${SRCFILES} PardisoSolver.cpp)
+    set(SRCFILES ${SRCFILES} src/PardisoSolver.cpp)
 ENDIF()
 # Prepare the build environment
 include_directories(${LIBIGL_INCLUDE_DIRS}
